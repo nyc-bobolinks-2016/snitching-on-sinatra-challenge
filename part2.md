@@ -461,7 +461,7 @@ doesn't matter in this case (<a href="http://www.sinatrarb.com/intro.html#Routes
 
 ```ruby
 post '/todos' do
-  puts "Hello from POSTS /todos!!"
+  "Hello from POSTS /todos!!"
 end
 ```
 
