@@ -161,11 +161,12 @@ and submit the form again.
 
 ### Rendering the form
 1. From our browser, we make a GET request to the `/greetings` route on our 
-   local computer.
+   local computer. That is, we enter `http://localhost:9393/greetings` into the
+   browser's URL bar and hit `Enter`, which makes the initial HTTP request.
 2. Sinatra finds a matching route and runs the code in the corresponding code 
-   block. In most cases, the last line will be a string (keep in mind the `erb`
-   method returns a string), so Sinatra will send that string back to the 
-   browser to be displayed.
+   block. In most cases, the last line will be a string (the `erb` method 
+   returns a string), so Sinatra will send that string back to the browser to be 
+   displayed.
 3. The browser converts the HTML it receives to something humans would rather read.
 
 
@@ -178,9 +179,11 @@ and submit the form again.
    so Sinatra will send a string back to the browser to be rendered.
 4. The browser converts the HTML it receives to something humans would rather read.
 
-We're already setting a variable in the post route (`@greeting`), but it doesn't
-look very good when a custom greeting isn't set. Let's add some code to display
-a default greeting if a custom greeting hasn't been set:
+# Clean it up
+We're setting the `@greeting` instance variable in the `post '/custom_greetings'` 
+route, but as we've seen, the page doesn't look very nice when a custom greeting
+hasn't been set. To solve that, let's add some code to display a default 
+greeting if a custom greeting hasn't been set:
 
 ```html
 <% if @greeting %>
