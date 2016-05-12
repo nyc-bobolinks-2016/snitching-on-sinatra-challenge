@@ -9,11 +9,6 @@ get '/about' do
 end
 ```
 
-Setting `@ice_cream_cones` in this block means we can access `@ice_cream_cones`
-in `about.erb` because instance variables can be accessed in a view rendered
-using the `erb` method. `erb` is a method that is most commonly called with a 
-symbol (`:about` in this case). The `erb` method executes ruby code contained 
-in special tags.
 
 Edit the view file to look like this
 
@@ -27,6 +22,16 @@ and refresh the page.
 
 The `<%= @ice_cream_cones %>` erb tag was replaced with a random number, 
 courtesy of the `@ice_cream_cones` instance variable we set in the controller.
+
+An instance variable set in a route's block will be available to the view that
+has been rendered by that block. That's a pretty complicated sentence, so let's
+try to break that down.
+
+Setting `@ice_cream_cones` in this block means we can access `@ice_cream_cones`
+in `about.erb`. Instance variables set in a block can be accessed in a view 
+rendered using the `erb` method *within than block*. `erb` is a method that is 
+most commonly called with a symbol (`:about` in this case). It executes ruby 
+code contained in special tags.
 
 > :flashlight: An ERB tag with an equals sign (`<%= %>`) displays the result
 > of the code inside the begin and end tags, while an ERB tag without an equals
