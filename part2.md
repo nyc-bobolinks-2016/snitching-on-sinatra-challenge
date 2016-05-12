@@ -214,3 +214,6 @@ without submitting a custom greeting, we get a friendly default:
 
 You built a web app! The concepts covered in this tutorial are the building
 blocks of all web applications.
+
+**If you're curious about how we might persist data in an application, head over
+to <a href="part3.md">part 3</a> of this tutorial!**
