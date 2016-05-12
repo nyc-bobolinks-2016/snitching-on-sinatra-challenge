@@ -129,12 +129,12 @@ the text "GOOD MORNING."
 
 The structure of this error looks really familiar. We saw this when we first
 started and we hadn't yet declared the route we were trying to access. Sinatra is
-kind enough to tell us exactly the route it's hitting, `post '/custom_greetings'`.
+kind enough to tell us exactly the route it "matched": `post '/custom_greetings'`.
 This is the route we used for the HTML form above.
 
 Our previous requests were HTTP GET requests, which generally *retrieve* data
-from the server. We had our form submit a POST request, another HTTP method we
-can use, to perform an action on the server.
+from the server. We had our form submit a POST request &mdash; another HTTP method we
+can use &mdash; to perform an action on the server.
 
 When we submit a POST request, a request "body" is sent to the server. In our
 form, the body that got sent was the `input` tag we put in our form.
