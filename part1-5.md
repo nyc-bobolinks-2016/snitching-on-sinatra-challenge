@@ -49,10 +49,13 @@ developing your application!
 > localhost, making localhosh and `127.0.0.1` equivalent. `9393` is the port 
 > that shotgun runs a web server on instead of `4567`.
 
+### Try it!
 Point your browser to 
 <a href="http://localhost:9393/about" target="_blank">http://localhost:9393/about</a>
-again and let's make sure everything is still working! If it is, head to 
-[Part 2](part2.md)! If not, read on.
+again and let's make sure everything is still working! 
+
+**If everything looks as you expect it, head to [Part 2](part2.md)! If not, read 
+on.**
 
 
 ## If it's not working, here's something to try!
