@@ -1,0 +1,10 @@
+<% if @greeting %>
+  <h1><%= @greeting %>, friend!</h1>
+<% else %>
+  <h1>Hello, friend!</h1>
+<% end %>
+
+<form action="/custom_greetings" method="post">
+  <input type="text" name="greeting">
+  <input type="submit">
+</form>
